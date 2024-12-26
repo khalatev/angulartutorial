@@ -1,0 +1,171 @@
+<h2>Angular Lifecycle Hooks</h2>
+<p>
+  Angular lifecycle hooks are special methods that Angular calls during the different stages of a component's lifecycle.
+  These hooks allow developers to execute custom logic during initialization, rendering, updates, and destruction of components.
+</p>
+
+<h3>Common Lifecycle Hooks</h3>
+<p>The order of execution:</p>
+<ol>
+  <li>ngOnChanges</li>
+  <li>ngOnInit</li>
+  <li>ngDoCheck</li>
+  <li>ngAfterContentInit</li>
+  <li>ngAfterContentChecked</li>
+  <li>ngAfterViewInit</li>
+  <li>ngAfterViewChecked</li>
+  <li>ngOnDestroy</li>
+</ol>
+<table>
+  <thead>
+    <tr>
+      <th>Hook</th>
+      <th>When It Runs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ngOnChanges</td>
+      <td>On input property changes.</td>
+    </tr>
+    <tr>
+      <td>ngOnInit</td>
+      <td>Once after component initialization.</td>
+    </tr>
+    <tr>
+      <td>ngDoCheck</td>
+      <td>On every change detection cycle.</td>
+    </tr>
+    <tr>
+      <td>ngAfterContentInit</td>
+      <td>After content projection initialization.</td>
+    </tr>
+    <tr>
+      <td>ngAfterContentChecked</td>
+      <td>After projected content is checked.</td>
+    </tr>
+    <tr>
+      <td>ngAfterViewInit</td>
+      <td>After component's view is initialized.</td>
+    </tr>
+    <tr>
+      <td>ngAfterViewChecked</td>
+      <td>After component's view is checked.</td>
+    </tr>
+    <tr>
+      <td>ngOnDestroy</td>
+      <td>Before the component is destroyed.</td>
+    </tr>
+  </tbody>
+</table>
+<div>
+    <p><strong>1. ngOnChanges</strong></p>
+    <p><strong>Called:</strong> When an input property (<code>@Input</code>) of the component changes.</p>
+    <p><strong>When it runs:</strong> Before <code>ngOnInit</code>, and any time a bound input property changes.</p>
+    <p><strong>Use case:</strong> Handle changes to input properties.</p>
+    <pre>
+      <code>
+        ngOnChanges(changes: SimpleChanges): void 
+          console.log('ngOnChanges called', changes);
+        
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>2. ngOnInit</strong></p>
+    <p><strong>Called:</strong> Once, after the component’s input properties are set.</p>
+    <p><strong>When it runs:</strong> After Angular has initialized the component.</p>
+    <p><strong>Use case:</strong> Initialize data, perform API calls, or set up component logic.</p>
+    <pre>
+      <code>
+        ngOnInit(): void 
+          console.log('ngOnInit called');
+        
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>3. ngDoCheck</strong></p>
+    <p><strong>Called:</strong> During every change detection cycle.</p>
+    <p><strong>When it runs:</strong> After <code>ngOnChanges</code> and <code>ngOnInit</code>, and whenever Angular runs change detection.</p>
+    <p><strong>Use case:</strong> Implement custom change detection logic.</p>
+    <pre>
+      <code>
+        ngDoCheck(): void 
+          console.log('ngDoCheck called');
+        
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>4. ngAfterContentInit</strong></p>
+    <p><strong>Called:</strong> Once, after the content (i.e., the projected content via <code>&lt;ng-content&gt;</code>) has been initialized.</p>
+    <p><strong>When it runs:</strong> After Angular projects external content into the component.</p>
+    <p><strong>Use case:</strong> Handle initialization logic that depends on projected content.</p>
+    <pre>
+      <code>
+        ngAfterContentInit(): void 
+          console.log('ngAfterContentInit called');
+       
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>5. ngAfterContentChecked</strong></p>
+    <p><strong>Called:</strong> After every change detection cycle for the content projected into the component.</p>
+    <p><strong>When it runs:</strong> After <code>ngAfterContentInit</code> and every time Angular checks the content.</p>
+    <p><strong>Use case:</strong> Perform checks or updates on the projected content.</p>
+    <pre>
+      <code>
+        ngAfterContentChecked(): void 
+          console.log('ngAfterContentChecked called');
+        
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>6. ngAfterViewInit</strong></p>
+    <p><strong>Called:</strong> Once, after the component’s view (i.e., the HTML template) has been initialized.</p>
+    <p><strong>When it runs:</strong> After Angular initializes the component’s view and child views.</p>
+    <p><strong>Use case:</strong> Access child components or DOM elements for initialization.</p>
+    <pre>
+      <code>
+        ngAfterViewInit(): void 
+          console.log('ngAfterViewInit called');
+       
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>7. ngAfterViewChecked</strong></p>
+    <p><strong>Called:</strong> After every change detection cycle for the component’s view and child views.</p>
+    <p><strong>When it runs:</strong> After <code>ngAfterViewInit</code> and every time Angular checks the component’s view.</p>
+    <p><strong>Use case:</strong> Perform actions after the view has been updated.</p>
+    <pre>
+      <code>
+        ngAfterViewChecked(): void 
+          console.log('ngAfterViewChecked called');
+        
+      </code>
+    </pre>
+  </div>
+
+  <div>
+    <p><strong>8. ngOnDestroy</strong></p>
+    <p><strong>Called:</strong> Just before the component is destroyed.</p>
+    <p><strong>When it runs:</strong> Right before Angular removes the component from the DOM.</p>
+    <p><strong>Use case:</strong> Clean up resources like subscriptions, event listeners, or timers.</p>
+    <pre>
+      <code>
+        ngOnDestroy(): void 
+          console.log('ngOnDestroy called');
+       
+      </code>
+    </pre>
+  </div>
