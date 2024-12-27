@@ -1,0 +1,71 @@
+<header>
+    <h1>Angular Tutorial</h1>
+    <p>Your guide to mastering Angular development</p>
+</header>
+
+<div class="content">
+    <div class="section">
+        <div class="section-title">Introduction to Angular</div>
+        <div class="section-content">
+            <p>Angular is a TypeScript-based framework for building dynamic web applications. Developed by Google, it provides a component-based architecture, making it easier to create reusable and maintainable code.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Setting Up Angular</div>
+        <div class="section-content">
+            <h4>1. Install Node.js</h4>
+            <p>Download and install Node.js from the official <a href="https://nodejs.org" target="_blank">Node.js website</a>.</p>
+            
+            <h4>2. Install Angular CLI</h4>
+            <p>Use the following command to install the Angular CLI:</p>
+            <div class="code-block">
+                npm install -g @angular/cli
+            </div>
+            
+            <h4>3. Create a New Angular Project</h4>
+            <p>Run the following command to create a new Angular project:</p>
+            <div class="code-block">
+                ng new my-angular-app
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Basic Concepts</div>
+        <div class="section-content">
+            <h4>1. Components</h4>
+            <p>Components are the building blocks of Angular applications. Each component consists of a TypeScript class, an HTML template, and optional CSS styles.</p>
+
+            <h4>2. Data Binding</h4>
+            <p>Angular supports one-way and two-way data binding, allowing seamless synchronization between the model and the view.</p>
+
+            <h4>3. Directives</h4>
+            <p>Directives are used to extend HTML functionality. Common directives include:</p>
+            <ul>
+                <li><code>*ngIf</code>: Condition rendering</li>
+                <li><code>*ngFor</code>: Iteration over lists</li>
+                <li><code>[ngStyle]</code>: Dynamic styles</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Example Component</div>
+        <div class="section-content">
+            <p>Here's an example of a basic Angular component:</p>
+            <div class="code-block">
+                <strong>app.component.ts</strong><br>
+                import &#123; Component &#125; from '@angular/core';<br><br>
+                @Component(&#123;<br>
+                    selector: 'app-root',<br>
+                    templateUrl: './app.component.html',<br>
+                    styleUrls: ['./app.component.css']<br>
+                &#125;)<br>
+                export class AppComponent &#123;<br>
+                    title = 'My Angular App';<br>
+                &#125;
+            </div>
+        </div>
+    </div>
+</div>

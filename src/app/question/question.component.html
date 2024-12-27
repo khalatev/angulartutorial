@@ -1,0 +1,85 @@
+<div class="qa-section">
+    <div class="section-title">Angular Interview Questions and Answers</div>
+
+    <div class="qa-item">
+        <div class="question">1. What is Angular? Explain its main features.</div>
+        <div class="answer">
+            Angular is a TypeScript-based front-end web application framework developed by Google. It allows developers to build single-page applications (SPAs) with a clean structure and reusable components.  
+            <br><strong>Main Features:</strong>  
+            - Component-based architecture  
+            - Dependency injection  
+            - Two-way data binding  
+            - Directives for DOM manipulation  
+            - RxJS for reactive programming  
+            - TypeScript support  
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="question">2. Explain the difference between AngularJS and Angular.</div>
+        <div class="answer">
+            <strong>AngularJS:</strong>  
+            - Based on JavaScript  
+            - Uses MVC architecture  
+            - Supports two-way data binding but with a digest cycle  
+            - Released in 2010  
+            <br><strong>Angular (2+):</strong>  
+            - Based on TypeScript  
+            - Component-based architecture  
+            - Enhanced performance with Ahead-of-Time (AOT) compilation  
+            - Supports hierarchical dependency injection  
+            - Released from 2016 onwards  
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="question">3. How does Angular handle dependency injection?</div>
+        <div class="answer">
+            Angular provides a built-in dependency injection (DI) framework that allows developers to define and manage dependencies for components, services, and other classes.  
+            <br><strong>How it works:</strong>  
+            - Dependencies are declared in the constructor of a class.  
+            - Angular injects instances of these dependencies at runtime, ensuring loose coupling between components and services.  
+            - The hierarchical injector system allows scoped services for modules and components.  
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="question">4. What are lifecycle hooks in Angular?</div>
+        <div class="answer">
+            Lifecycle hooks are methods that Angular calls at specific points in a component or directive's lifecycle.  
+            <br><strong>Common Lifecycle Hooks:</strong>  
+            - <code>ngOnInit()</code>: Called once the component is initialized.  
+            - <code>ngOnChanges()</code>: Called whenever input properties change.  
+            - <code>ngOnDestroy()</code>: Called before the component is destroyed.  
+            - <code>ngAfterViewInit()</code>: Called after the component's view is initialized.  
+            These hooks allow developers to execute logic at different phases of the component lifecycle.
+            <a routerLink="/lifecycle-hook" aria-label="Learn more about lifecycle hooks">For more details, click here</a> 
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="question">5. Explain Change Detection in Angular.</div>
+        <div class="answer">
+            Change detection in Angular is the process of tracking changes in the state of an application and updating the DOM accordingly.  
+            <br><strong>How it works:</strong>  
+            - Angular uses a tree of components to detect changes.  
+            - Each component has its own change detector, which checks bindings and updates the DOM.  
+            - The <code>Zone.js</code> library is used to detect asynchronous changes like HTTP requests or user input.  
+            - Developers can optimize change detection using <code>OnPush</code> change detection strategy or manually triggering detection using <code>ChangeDetectorRef</code>.  
+        </div>
+    </div>
+
+    <div class="qa-item">
+        <div class="question">6. How do you optimize an Angular application?</div>
+        <div class="answer">
+            Optimizing an Angular application involves various strategies:  
+            - Use <strong>Ahead-of-Time (AOT)</strong> compilation to reduce the size of the application bundle.  
+            - Implement lazy loading to load modules only when needed.  
+            - Use <strong>OnPush</strong> change detection for components with immutable data.  
+            - Minimize the use of watchers and unnecessary bindings.  
+            - Compress assets like images and CSS files.  
+            - Use <strong>Angular Universal</strong> for server-side rendering (SSR).  
+            - Leverage performance tools like Lighthouse to identify bottlenecks.  
+        </div>
+    </div>
+</div>

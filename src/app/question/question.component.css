@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+.qa-section {
+    max-width: 800px;
+    margin: auto;
+}
+.section-title {
+    font-size: 2em;
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+.qa-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.question {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+.answer {
+    color: #666;
+    margin-left: 15px;
+}

@@ -7,12 +7,26 @@ import { HttpRequestComponent } from './http-request/http-request.component';
 import { LifecycleHookComponent } from './lifecycle-hook/lifecycle-hook.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { QuestionComponent } from './question/question.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 @NgModule({
   declarations: [
     AppComponent,
     HttpRequestComponent,
     LifecycleHookComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent,
+    HomeComponent,
+    QuestionComponent,
+    ProjectsComponent,
+    TutorialComponent,
+    FooterComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

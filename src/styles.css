@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+footer {    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.content {
+    padding-bottom: 60px;
+}

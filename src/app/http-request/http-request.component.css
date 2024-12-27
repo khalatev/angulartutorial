@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+.question-category {
+    margin-bottom: 20px;
+}
+.category-title {
+    font-size: 1.5em;
+    color: #d32f2f;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.question-list {
+    margin-left: 20px;
+}
+.question-item {
+    margin-bottom: 10px;
+}
