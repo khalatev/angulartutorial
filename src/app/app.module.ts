@@ -10,7 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { QuestionComponent } from './question/question.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsIdeaComponent } from './projects-idea/projects.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -23,7 +23,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NavbarComponent,
     HomeComponent,
     QuestionComponent,
-    ProjectsComponent,
+    ProjectsIdeaComponent,
     TutorialComponent,
     FooterComponent,
     ContactUsComponent

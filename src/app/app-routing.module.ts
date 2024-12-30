@@ -5,7 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { HttpRequestComponent } from './http-request/http-request.component';
 import { HomeComponent } from './home/home.component';
 import { QuestionComponent } from './question/question.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsIdeaComponent } from './projects-idea/projects.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
@@ -15,7 +15,7 @@ const routes: Routes = [
   {path:'about-us',component:AboutComponent},
   {path:"home",component:HomeComponent},
   {path:"question",component:QuestionComponent},
-  {path:"project-idea",component:ProjectsComponent},
+  {path:"projects-idea",component:ProjectsIdeaComponent},
   {path:"tutorial",component:TutorialComponent},
   {path:"contact-us",component:ContactUsComponent},
   {path:"",redirectTo:"home",pathMatch:"full"},
