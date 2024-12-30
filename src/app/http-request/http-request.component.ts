@@ -7,6 +7,7 @@ import { Component, Input, OnChanges, OnInit,SimpleChanges } from '@angular/core
 })
 export class HttpRequestComponent implements OnInit,OnChanges {
  @Input() myValProp: string;
+ propChanges:string;
   constructor() { }
 
   ngOnInit() {
