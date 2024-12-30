@@ -107,14 +107,14 @@ module.exports = "<h2>Angular Lifecycle Hooks</h2>\n<p>\n  Angular lifecycle hoo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n    <nav class=\"navbar navbar-expand-lg navbar-light bg-danger\">\n        <a class=\"navbar-brand text-white\" routerLink=\"/home\" routerLinkActive=\"active\"><img src=\"/assets/logo.png\" alt=\"Logo\" style=\"margin-left: 10px;width: 83px;\"></a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n            <ul class=\"navbar-nav\">\n                <li class=\"nav-item\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n                    <a class=\"nav-link text-white\" routerLink=\"/home\">Home</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white\" routerLink=\"/tutorial\">Tutorials</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white\" routerLink=\"/question\">Interview Questions</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white\" routerLink=\"/project-idea\">Projects</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white disabled\" routerLink=\"/about-us\">About Us</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white disabled\" routerLink=\"/contact\">Contact</a>\n                </li>\n            </ul>\n        </div>\n    </nav>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n    <nav class=\"navbar navbar-expand-lg navbar-light bg-danger\">\n        <a class=\"navbar-brand text-white\" routerLink=\"/home\" routerLinkActive=\"active\"><img src=\"/assets/logo.png\" alt=\"Logo\" style=\"margin-left: 10px;width: 83px;\"></a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n            <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n            <ul class=\"navbar-nav\">\n                <li class=\"nav-item\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\">\n                    <a class=\"nav-link text-white\" routerLink=\"/home\">Home</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white\" routerLink=\"/tutorial\">Tutorials</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white\" routerLink=\"/question\">Interview Questions</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white\" routerLink=\"/projects-idea\">Projects-Idea</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white disabled\" routerLink=\"/about-us\">About Us</a>\n                </li>\n                <li class=\"nav-item\" routerLinkActive=\"active\">\n                    <a class=\"nav-link text-white disabled\" routerLink=\"/contact\">Contact</a>\n                </li>\n            </ul>\n        </div>\n    </nav>\n</div>\n"
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/index.js!./src/app/projects/projects.component.html":
-/*!****************************************************************************!*\
-  !*** ./node_modules/raw-loader!./src/app/projects/projects.component.html ***!
-  \****************************************************************************/
+/***/ "./node_modules/raw-loader/index.js!./src/app/projects-idea/projects.component.html":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/projects-idea/projects.component.html ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _http_request_http_request_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./http-request/http-request.component */ "./src/app/http-request/http-request.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _question_question_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./question/question.component */ "./src/app/question/question.component.ts");
-/* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./projects/projects.component */ "./src/app/projects/projects.component.ts");
+/* harmony import */ var _projects_idea_projects_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./projects-idea/projects.component */ "./src/app/projects-idea/projects.component.ts");
 /* harmony import */ var _tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tutorial/tutorial.component */ "./src/app/tutorial/tutorial.component.ts");
 /* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
 
@@ -224,7 +224,7 @@ const routes = [
     { path: 'about-us', component: _about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"] },
     { path: "home", component: _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"] },
     { path: "question", component: _question_question_component__WEBPACK_IMPORTED_MODULE_7__["QuestionComponent"] },
-    { path: "project-idea", component: _projects_projects_component__WEBPACK_IMPORTED_MODULE_8__["ProjectsComponent"] },
+    { path: "projects-idea", component: _projects_idea_projects_component__WEBPACK_IMPORTED_MODULE_8__["ProjectsIdeaComponent"] },
     { path: "tutorial", component: _tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_9__["TutorialComponent"] },
     { path: "contact-us", component: _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_10__["ContactUsComponent"] },
     { path: "", redirectTo: "home", pathMatch: "full" },
@@ -306,7 +306,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _question_question_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./question/question.component */ "./src/app/question/question.component.ts");
-/* harmony import */ var _projects_projects_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./projects/projects.component */ "./src/app/projects/projects.component.ts");
+/* harmony import */ var _projects_idea_projects_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./projects-idea/projects.component */ "./src/app/projects-idea/projects.component.ts");
 /* harmony import */ var _tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./tutorial/tutorial.component */ "./src/app/tutorial/tutorial.component.ts");
 /* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 /* harmony import */ var _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contact-us/contact-us.component */ "./src/app/contact-us/contact-us.component.ts");
@@ -338,7 +338,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_9__["NavbarComponent"],
             _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
             _question_question_component__WEBPACK_IMPORTED_MODULE_11__["QuestionComponent"],
-            _projects_projects_component__WEBPACK_IMPORTED_MODULE_12__["ProjectsComponent"],
+            _projects_idea_projects_component__WEBPACK_IMPORTED_MODULE_12__["ProjectsIdeaComponent"],
             _tutorial_tutorial_component__WEBPACK_IMPORTED_MODULE_13__["TutorialComponent"],
             _footer_footer_component__WEBPACK_IMPORTED_MODULE_14__["FooterComponent"],
             _contact_us_contact_us_component__WEBPACK_IMPORTED_MODULE_15__["ContactUsComponent"]
@@ -636,43 +636,43 @@ NavbarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/projects/projects.component.css":
-/*!*************************************************!*\
-  !*** ./src/app/projects/projects.component.css ***!
-  \*************************************************/
+/***/ "./src/app/projects-idea/projects.component.css":
+/*!******************************************************!*\
+  !*** ./src/app/projects-idea/projects.component.css ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "body {\r\n    font-family: Arial, sans-serif;\r\n    line-height: 1.6;\r\n    margin: 20px;\r\n    color: #333;\r\n}\r\n.project-ideas {\r\n    /*max-width: 800px;*/\r\n    margin: auto;\r\n}\r\n.section-title {\r\n    font-size: 2em;\r\n    text-align: center;\r\n    color: #d32f2f;\r\n    margin-bottom: 20px;\r\n}\r\n.project-list {\r\n    margin: 0;\r\n    padding: 0;\r\n    list-style-type: none;\r\n}\r\n.project-item {\r\n    margin-bottom: 15px;\r\n    padding: 15px;\r\n    border: 1px solid #ddd;\r\n    border-radius: 8px;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n.project-item h4 {\r\n    margin: 0 0 10px;\r\n    font-size: 1.2em;\r\n    color: #555;\r\n}\r\n.project-item p {\r\n    margin: 0;\r\n    color: #666;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLDhCQUE4QjtJQUM5QixnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLFdBQVc7QUFDZjtBQUNBO0lBQ0ksb0JBQW9CO0lBQ3BCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGNBQWM7SUFDZCxrQkFBa0I7SUFDbEIsY0FBYztJQUNkLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksU0FBUztJQUNULFVBQVU7SUFDVixxQkFBcUI7QUFDekI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGtCQUFrQjtJQUNsQix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsV0FBVztBQUNmO0FBQ0E7SUFDSSxTQUFTO0lBQ1QsV0FBVztBQUNmIiwiZmlsZSI6InNyYy9hcHAvcHJvamVjdHMvcHJvamVjdHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xyXG4gICAgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmO1xyXG4gICAgbGluZS1oZWlnaHQ6IDEuNjtcclxuICAgIG1hcmdpbjogMjBweDtcclxuICAgIGNvbG9yOiAjMzMzO1xyXG59XHJcbi5wcm9qZWN0LWlkZWFzIHtcclxuICAgIC8qbWF4LXdpZHRoOiA4MDBweDsqL1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG59XHJcbi5zZWN0aW9uLXRpdGxlIHtcclxuICAgIGZvbnQtc2l6ZTogMmVtO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY29sb3I6ICNkMzJmMmY7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xyXG59XHJcbi5wcm9qZWN0LWxpc3Qge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgcGFkZGluZzogMDtcclxuICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxufVxyXG4ucHJvamVjdC1pdGVtIHtcclxuICAgIG1hcmdpbi1ib3R0b206IDE1cHg7XHJcbiAgICBwYWRkaW5nOiAxNXB4O1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgI2RkZDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDhweDtcclxuICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XHJcbn1cclxuLnByb2plY3QtaXRlbSBoNCB7XHJcbiAgICBtYXJnaW46IDAgMCAxMHB4O1xyXG4gICAgZm9udC1zaXplOiAxLjJlbTtcclxuICAgIGNvbG9yOiAjNTU1O1xyXG59XHJcbi5wcm9qZWN0LWl0ZW0gcCB7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBjb2xvcjogIzY2NjtcclxufSJdfQ== */"
+module.exports = "body {\r\n    font-family: Arial, sans-serif;\r\n    line-height: 1.6;\r\n    margin: 20px;\r\n    color: #333;\r\n}\r\n.project-ideas {\r\n    /*max-width: 800px;*/\r\n    margin: auto;\r\n}\r\n.section-title {\r\n    font-size: 2em;\r\n    text-align: center;\r\n    color: #d32f2f;\r\n    margin-bottom: 20px;\r\n}\r\n.project-list {\r\n    margin: 0;\r\n    padding: 0;\r\n    list-style-type: none;\r\n}\r\n.project-item {\r\n    margin-bottom: 15px;\r\n    padding: 15px;\r\n    border: 1px solid #ddd;\r\n    border-radius: 8px;\r\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n}\r\n.project-item h4 {\r\n    margin: 0 0 10px;\r\n    font-size: 1.2em;\r\n    color: #555;\r\n}\r\n.project-item p {\r\n    margin: 0;\r\n    color: #666;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcHJvamVjdHMtaWRlYS9wcm9qZWN0cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksOEJBQThCO0lBQzlCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osV0FBVztBQUNmO0FBQ0E7SUFDSSxvQkFBb0I7SUFDcEIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksY0FBYztJQUNkLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2QsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxTQUFTO0lBQ1QsVUFBVTtJQUNWLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsa0JBQWtCO0lBQ2xCLHdDQUF3QztBQUM1QztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFNBQVM7SUFDVCxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9wcm9qZWN0cy1pZGVhL3Byb2plY3RzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJib2R5IHtcclxuICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjtcclxuICAgIGxpbmUtaGVpZ2h0OiAxLjY7XHJcbiAgICBtYXJnaW46IDIwcHg7XHJcbiAgICBjb2xvcjogIzMzMztcclxufVxyXG4ucHJvamVjdC1pZGVhcyB7XHJcbiAgICAvKm1heC13aWR0aDogODAwcHg7Ki9cclxuICAgIG1hcmdpbjogYXV0bztcclxufVxyXG4uc2VjdGlvbi10aXRsZSB7XHJcbiAgICBmb250LXNpemU6IDJlbTtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGNvbG9yOiAjZDMyZjJmO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcclxufVxyXG4ucHJvamVjdC1saXN0IHtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbn1cclxuLnByb2plY3QtaXRlbSB7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAxNXB4O1xyXG4gICAgcGFkZGluZzogMTVweDtcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNkZGQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xyXG59XHJcbi5wcm9qZWN0LWl0ZW0gaDQge1xyXG4gICAgbWFyZ2luOiAwIDAgMTBweDtcclxuICAgIGZvbnQtc2l6ZTogMS4yZW07XHJcbiAgICBjb2xvcjogIzU1NTtcclxufVxyXG4ucHJvamVjdC1pdGVtIHAge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gICAgY29sb3I6ICM2NjY7XHJcbn0iXX0= */"
 
 /***/ }),
 
-/***/ "./src/app/projects/projects.component.ts":
-/*!************************************************!*\
-  !*** ./src/app/projects/projects.component.ts ***!
-  \************************************************/
-/*! exports provided: ProjectsComponent */
+/***/ "./src/app/projects-idea/projects.component.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/projects-idea/projects.component.ts ***!
+  \*****************************************************/
+/*! exports provided: ProjectsIdeaComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function() { return ProjectsComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProjectsIdeaComponent", function() { return ProjectsIdeaComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-let ProjectsComponent = class ProjectsComponent {
+let ProjectsIdeaComponent = class ProjectsIdeaComponent {
     constructor() { }
     ngOnInit() {
     }
 };
-ProjectsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+ProjectsIdeaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-projects',
-        template: __webpack_require__(/*! raw-loader!./projects.component.html */ "./node_modules/raw-loader/index.js!./src/app/projects/projects.component.html"),
-        styles: [__webpack_require__(/*! ./projects.component.css */ "./src/app/projects/projects.component.css")]
+        selector: 'app-projects-idea',
+        template: __webpack_require__(/*! raw-loader!./projects.component.html */ "./node_modules/raw-loader/index.js!./src/app/projects-idea/projects.component.html"),
+        styles: [__webpack_require__(/*! ./projects.component.css */ "./src/app/projects-idea/projects.component.css")]
     })
-], ProjectsComponent);
+], ProjectsIdeaComponent);
 
 
 
