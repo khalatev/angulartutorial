@@ -39,3 +39,46 @@ header h1 {
     font-family: monospace;
     overflow-x: auto;
 }
+.section {
+    margin: 10px 0;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.section-title:hover {
+    color: #0056b3;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(90deg); /* Rotate the arrow when the content is visible */
+}
+
+.section-content {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #007bff;
+    transition: max-height 0.3s ease-out;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
